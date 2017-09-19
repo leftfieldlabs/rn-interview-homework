@@ -35,7 +35,7 @@ Here is our fake setting for the exercise:
 We are building a new application around managing contacts in a user’s phone. The goal of the assignment is to get a contact list display and drill-in page for a selected contact. This will be the base of further development, so the code must be ready for additions and changes. At this time, we do not need the favorite contact to persist after app is closed.
 
 ### Data
-Please source the contacts from the User's phonebook. Since we are using expo, this should be very straightforward - see [Contacts Documentation](https://docs.expo.io/versions/latest/sdk/contacts.html) - please retrieve phone numbers, emails, and URLs for each contact. We have also placed two icons in the `./assets/icons` to allow for favorited and unfavorited states.
+Please source the contacts from the User's phonebook. Since we are using expo, this should be very straightforward - see [Contacts Documentation](https://docs.expo.io/versions/latest/sdk/contacts.html) - please retrieve phone numbers, emails, and URLs for each contact. We have also placed two icons in the `./assets/icons` to be used for favorited and unfavorited states on the contact page.
 
 ### Screens
 
@@ -53,3 +53,5 @@ The detailed contact information page should show the information of the chosen 
 #### Detailed Contact Info
 - Favorite Contact select persists on app re-launch
 - Ability to interact with contact data - call, email, visit website, open maps with any addresses
+- Have fallbacks for contacts with missing details (first/last name, emails, phone numbers) or contacts that are deemed a company
+- Images/Thumbnails for the contact with a placeholder for contacts without any
