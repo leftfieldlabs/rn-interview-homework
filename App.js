@@ -1,15 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NativeRouter, Route, Link } from 'react-router-native'
+import Contacts from './Contacts'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+export default () => (
+  <NativeRouter>
+    <View style={styles.container}>
+      <Route exact path="/" component={Contacts} />
+      <Route path="/contact/:id" component={Contact} />
+    </View>
+  </NativeRouter>
+)
 
 const styles = StyleSheet.create({
   container: {
@@ -18,4 +19,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
